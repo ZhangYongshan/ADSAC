@@ -3,27 +3,27 @@
 > **AAAI 2026** | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/38295) | [Code](https://github.com/ZhangYongshan/ADSAC)
 
 Official implementation of **ADSAC**, the first framework for **cross-scene hyperspectral image (HSI) clustering** without label guidance in either source or target scenes.
+
+## Overview
+
+Existing cross-scene HSI recognition methods rely on labeled source data. ADSAC removes this requirement entirely — no labels needed for either scene — making it suitable for real-world deployment where pixel-level annotation is costly and time-consuming.
 <p align="center">
   <img src="assets/motivation.png" width="700"/>
   <br>
   <em>Figure 1: Different cross-scene HSI recognition styles. ADSAC (c) requires no labels in either scene.</em>
 </p>
----
 
-## Overview
-
-Existing cross-scene HSI recognition methods rely on labeled source data. ADSAC removes this requirement entirely — no labels needed for either scene — making it suitable for real-world deployment where pixel-level annotation is costly and time-consuming.
 
 ADSAC follows a structured **three-step learning paradigm**:
 
-```
+
 <p align="center">
   <img src="assets/framework.png" width="700"/>
   <br>
   <em>Figure 1: Different cross-scene HSI recognition styles. ADSAC (c) requires no labels in either scene.</em>
-</p>```
+</p>
 
----
+
 
 ## Key Contributions
 
