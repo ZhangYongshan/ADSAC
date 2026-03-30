@@ -11,7 +11,7 @@ Official implementation of **ADSAC**, the first framework for **cross-scene hype
 Existing cross-scene HSI recognition methods rely heavily on labeled source data, which limits their applicability in real-world scenarios due to the high cost of pixel-level annotation. ADSAC removes this requirement entirely—**no labels are needed for either scene**—making it a practical solution for large-scale deployment.
 
 <p align="center">
-  <img src="assets/motivation.png" width="700"/>
+  <img src="assets/motivation.png" width="600"/>
   <br>
   <em>Figure 1: Comparison of cross-scene HSI recognition paradigms. ADSAC operates without labels in both source and target scenes.</em>
 </p>
@@ -25,7 +25,7 @@ Existing cross-scene HSI recognition methods rely heavily on labeled source data
 ADSAC follows a structured **three-stage learning paradigm**, as illustrated below:
 
 <p align="center">
-  <img src="assets/framework.png" width="700"/>
+  <img src="assets/framework.png" width="800"/>
   <br>
   <em>Figure 2: Overall framework of ADSAC.</em>
 </p>
