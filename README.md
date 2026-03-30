@@ -1,6 +1,6 @@
 # ADSAC: Anchor-Guided Discriminative Subspace Alignment and Clustering for Cross-Scene Hyperspectral Imagery
 
-> **AAAI 2026** | [Paper](#) | [Code](https://github.com/ZhangYongshan/ADSAC)
+> **AAAI 2026** | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/38295) | [Code](https://github.com/ZhangYongshan/ADSAC)
 
 Official implementation of **ADSAC**, the first framework for **cross-scene hyperspectral image (HSI) clustering** without label guidance in either source or target scenes.
 
