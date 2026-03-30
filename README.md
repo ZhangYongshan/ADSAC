@@ -3,7 +3,11 @@
 > **AAAI 2026** | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/38295) | [Code](https://github.com/ZhangYongshan/ADSAC)
 
 Official implementation of **ADSAC**, the first framework for **cross-scene hyperspectral image (HSI) clustering** without label guidance in either source or target scenes.
-
+<p align="center">
+  <img src="assets/motivation.png" width="700"/>
+  <br>
+  <em>Figure 1: Different cross-scene HSI recognition styles. ADSAC (c) requires no labels in either scene.</em>
+</p>
 ---
 
 ## Overview
@@ -13,9 +17,11 @@ Existing cross-scene HSI recognition methods rely on labeled source data. ADSAC 
 ADSAC follows a structured **three-step learning paradigm**:
 
 ```
-<img width="2781" height="1037" alt="framework1" src="https://github.com/user-attachments/assets/67c434cf-92c0-4342-9c88-837b90118e8b" />
-
-```
+<p align="center">
+  <img src="assets/framework.png" width="700"/>
+  <br>
+  <em>Figure 1: Different cross-scene HSI recognition styles. ADSAC (c) requires no labels in either scene.</em>
+</p>```
 
 ---
 
@@ -32,14 +38,11 @@ ADSAC follows a structured **three-step learning paradigm**:
 
 ADSAC is evaluated on **6 cross-scene clustering tasks** across three benchmark datasets and consistently outperforms 9 state-of-the-art HSI clustering methods.
 
-| Task | ACC | NMI | Purity |
-|------|-----|-----|--------|
-| Houston2013 → Houston2018 | **0.8688** | **0.4645** | **0.8783** |
-| Houston2018 → Houston2013 | **0.8680** | **0.6456** | **0.8182** |
-| PaviaU → PaviaC | **0.8341** | **0.6789** | **0.8139** |
-| PaviaC → PaviaU | **0.7286** | **0.6314** | **0.8701** |
-| Dioni → Loukia | **0.8379** | **0.5777** | **0.8423** |
-| Loukia → Dioni | **0.7723** | **0.4992** | **0.7728** |
+<p align="center">
+  <img src="assets/image.png" width="700"/>
+  <br>
+  <em>Figure 1: Different cross-scene HSI recognition styles. ADSAC (c) requires no labels in either scene.</em>
+</p>
 
 ---
 
