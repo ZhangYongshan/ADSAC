@@ -41,44 +41,6 @@ This design yields a fully unsupervised solution for cross-scene HSI clustering.
 
 ---
 
-## Method Details
-
-### Step 1 — APGL (Anchor-Promoted Graph Learning)
-
-Superpixel segmentation (ERS) is first applied to the source scene to generate anchor representations. APGL then jointly performs:
-
-- **Anchor graph construction**: learns $\mathbf{Z} \in \mathbb{R}^{N_s \times M_s}$ to model pixel–anchor relationships.  
-- **Clustering exploration**: factorizes anchors into centroid matrix $\mathbf{F}$ and indicator matrix $\mathbf{G}$.  
-
-Source labels are obtained as:
-\[
-\mathbf{Y}^s = \mathbf{Z}\mathbf{G}
-\]
-
----
-
-### Step 2 — DCSA (Discriminative Cross-Scene Subspace Alignment)
-
-DCSA learns projection matrices $\mathbf{W}_s, \mathbf{W}_t$ by jointly optimizing:
-
-1. **Source discriminant preservation** (intra-compactness + inter-separation)  
-2. **Target geometry preservation** (manifold structure)  
-3. **Target variance maximization** (feature diversity)  
-4. **Distribution discrepancy minimization** (conditional MMD)  
-
-The optimization is solved via generalized eigenvalue decomposition.
-
----
-
-### Step 3 — Label Inference
-
-A KNN classifier trained on aligned source features is applied to aligned target data to infer final labels:
-\[
-\mathbf{Y}^t
-\]
-
----
-
 ## Results
 
 ADSAC is evaluated on **6 cross-scene clustering tasks** across three benchmark datasets and consistently outperforms 9 state-of-the-art methods.
