@@ -1,10 +1,11 @@
+
 # ADSAC: Anchor-Guided Discriminative Subspace Alignment and Clustering for Cross-Scene Hyperspectral Imagery
 
 > **AAAI 2026** | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/38295) | [Code](https://github.com/ZhangYongshan/ADSAC)
 
-Official implementation of **ADSAC**, the first framework for **cross-scene hyperspectral image (HSI) clustering** without label guidance in either source or target scenes.
----
+Official implementation of ADSAC, the first framework for cross-scene hyperspectral image (HSI) clustering without label guidance in either source or target scenes.
 
+---
 ## Overview
 
 Existing cross-scene HSI recognition methods rely heavily on labeled source data, which limits their applicability in real-world scenarios due to the high cost of pixel-level annotation. ADSAC removes this requirement entirely—**no labels are needed for either scene**.As illustrated in Fig. 1 (a), supervised methods perform cross-scene learning using fully labeled source data and partially labeled target data. In contrast, as shown in Fig. 1 (b), semi-supervised methods offer greater flexibility by requiring fully labeled source data and unlabeled target data for cross-scene learning . Their major difference lies in the labeling requirements of the target scene. Although existing methods show strong generalization performance, they always rely on fully labeled source data and either partially labeled or unlabeled target data. However, in practical scenarios, pixel-level annotation for HSIs is costly and time-consuming . The labeling requirement makes these methods inapplicable when explicit labels are unavailable for both source and target data. In such cases, as shown in Fig. 1 (c), cross-scene HSI clustering needs to be explored as a viable alternative.
